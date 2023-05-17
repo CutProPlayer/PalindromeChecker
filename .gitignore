@@ -1,0 +1,12 @@
+ if (isPalindrome(input)) {
+            System.out.println("Строка является палиндромом.");
+        } else {
+            System.out.println("Строка не является палиндромом.");
+        }
+    }
+
+    public static boolean isPalindrome(String input) {
+        String reversed = new StringBuilder(input).reverse().toString();
+        return input.equalsIgnoreCase(reversed);
+    }
+}
